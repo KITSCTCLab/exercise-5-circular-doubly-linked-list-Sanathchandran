@@ -4,7 +4,7 @@ class Node:
         data     -> data held by the node
         previous -> link to the previous node
         next     -> link to the next node"""
-    def _init_(self, data=None):
+    def __init__(self, data=None):
         self.data = data
         self.previous = self
         self.next = self
@@ -23,7 +23,7 @@ class DoublyCircularLinkedList:
         get
         delete_at_index
         get_previous_next"""
-    def _init_(self):
+    def __init__(self):
         self.head = None
         self.tail = None
         self.count = 0
